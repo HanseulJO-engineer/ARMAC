@@ -1,0 +1,543 @@
+{
+  "dataset": "pollen.spd2",
+  "source": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd2",
+  "position_source": "pollen.spd2.WDs.yml · WD[0:] · mm",
+  "settings": {
+    "methods": [
+      "normalized_variance",
+      "squared_gradient",
+      "brenner",
+      "brenner_squared",
+      "laplacian_variance",
+      "tenengrad",
+      "entropy",
+      "autocorrelation",
+      "wavelet1",
+      "wavelet2"
+    ],
+    "search": "gradient_verified",
+    "start_fraction": 0.25,
+    "fit_window": 5,
+    "gaussian_sigma": 0,
+    "roi": [
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  "images_found": 199,
+  "images_analyzed": 199,
+  "image_shape": [
+    768,
+    1024
+  ],
+  "elapsed_seconds": 4.075521500315517,
+  "warnings": [
+    "WD 200개 / 이미지 199개. 자연순 정렬 첫 이미지 ↔ WD[0]로 매핑합니다. 'WD 시작 항목'에서 0 또는 1을 선택해 확인하세요.",
+    "실제 WD: 최소 10.26000 mm, 중앙 이동 간격 5.000 µm. 지시문의 10 mm / 10 µm와 다르므로 메타데이터를 우선합니다."
+  ],
+  "methods": {
+    "normalized_variance": {
+      "name": "Normalized variance",
+      "image": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd2/pollen.spd2.0099.png",
+      "sequence_1_based": 99,
+      "coarse_distance_mm": 10.750000000000076,
+      "coarse_focus": 21.11284479329161,
+      "search": {
+        "index": 98,
+        "visited": [
+          50,
+          75
+        ],
+        "local_index": 75,
+        "corrected": true,
+        "message": "기울기 탐색의 지역 최대값을 전체 스캔의 더 높은 최대값으로 보정했습니다."
+      },
+      "fine": {
+        "distance_mm": 10.745985207783978,
+        "coefficients": [
+          -0.03190831367946066,
+          -0.05124209975563829,
+          21.09728833290561
+        ],
+        "center_mm": 10.750000000000076,
+        "scale_mm": 0.005000000000000782,
+        "fit_indices": [
+          96,
+          97,
+          98,
+          99,
+          100
+        ],
+        "r_squared": 0.9216729174632957,
+        "rmse": 0.026240475047725465,
+        "status": "이차곡선의 꼭짓점으로 정밀 위치를 추정했습니다. 이 위치의 실측 이미지는 없습니다."
+      },
+      "statistics": {
+        "mean": 17.093243846134982,
+        "median": 16.623091132290376,
+        "std_population": 1.4729235288309108,
+        "min": 15.483407979819114,
+        "max": 21.11284479329161,
+        "peak_gap_percent": 0.09886188577600093
+      }
+    },
+    "squared_gradient": {
+      "name": "Squared gradient",
+      "image": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd2/pollen.spd2.0099.png",
+      "sequence_1_based": 99,
+      "coarse_distance_mm": 10.750000000000076,
+      "coarse_focus": 1040.9033798163082,
+      "search": {
+        "index": 98,
+        "visited": [
+          50,
+          25
+        ],
+        "local_index": 25,
+        "corrected": true,
+        "message": "기울기 탐색의 지역 최대값을 전체 스캔의 더 높은 최대값으로 보정했습니다."
+      },
+      "fine": {
+        "distance_mm": 10.74832012632665,
+        "coefficients": [
+          -3.8725346604001465,
+          -2.6021476101744003,
+          1039.9328821771865
+        ],
+        "center_mm": 10.750000000000076,
+        "scale_mm": 0.005000000000000782,
+        "fit_indices": [
+          96,
+          97,
+          98,
+          99,
+          100
+        ],
+        "r_squared": 0.9903848879617889,
+        "rmse": 0.7342589157086098,
+        "status": "이차곡선의 꼭짓점으로 정밀 위치를 추정했습니다. 이 위치의 실측 이미지는 없습니다."
+      },
+      "statistics": {
+        "mean": 878.7722706669856,
+        "median": 867.1343576898013,
+        "std_population": 35.58498097601723,
+        "min": 856.7917786738351,
+        "max": 1040.9033798163082,
+        "peak_gap_percent": 0.22095344930491873
+      }
+    },
+    "brenner": {
+      "name": "Brenner · course",
+      "image": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd2/pollen.spd2.0099.png",
+      "sequence_1_based": 99,
+      "coarse_distance_mm": 10.750000000000076,
+      "coarse_focus": 37.52527978228963,
+      "search": {
+        "index": 98,
+        "visited": [
+          50,
+          25,
+          22,
+          23
+        ],
+        "local_index": 23,
+        "corrected": true,
+        "message": "기울기 탐색의 지역 최대값을 전체 스캔의 더 높은 최대값으로 보정했습니다."
+      },
+      "fine": {
+        "distance_mm": 10.747477949663269,
+        "coefficients": [
+          -0.0678866099093781,
+          -0.06848537895466789,
+          37.47990339757478
+        ],
+        "center_mm": 10.750000000000076,
+        "scale_mm": 0.005000000000000782,
+        "fit_indices": [
+          96,
+          97,
+          98,
+          99,
+          100
+        ],
+        "r_squared": 0.9651239625224897,
+        "rmse": 0.02837748910925017,
+        "status": "이차곡선의 꼭짓점으로 정밀 위치를 추정했습니다. 이 위치의 실측 이미지는 없습니다."
+      },
+      "statistics": {
+        "mean": 33.90722083565864,
+        "median": 33.6243387659002,
+        "std_population": 0.8334105148258919,
+        "min": 33.40778141307893,
+        "max": 37.52527978228963,
+        "peak_gap_percent": 0.19189947307347952
+      }
+    },
+    "brenner_squared": {
+      "name": "Brenner · squared",
+      "image": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd2/pollen.spd2.0099.png",
+      "sequence_1_based": 99,
+      "coarse_distance_mm": 10.750000000000076,
+      "coarse_focus": 2311.6349656515004,
+      "search": {
+        "index": 98,
+        "visited": [
+          50,
+          25,
+          22,
+          23
+        ],
+        "local_index": 23,
+        "corrected": true,
+        "message": "기울기 탐색의 지역 최대값을 전체 스캔의 더 높은 최대값으로 보정했습니다."
+      },
+      "fine": {
+        "distance_mm": 10.74830749946401,
+        "coefficients": [
+          -9.102224007111676,
+          -6.162207604574367,
+          2307.1588103756053
+        ],
+        "center_mm": 10.750000000000076,
+        "scale_mm": 0.005000000000000782,
+        "fit_indices": [
+          96,
+          97,
+          98,
+          99,
+          100
+        ],
+        "r_squared": 0.970072651013805,
+        "rmse": 3.082164733341591,
+        "status": "이차곡선의 꼭짓점으로 정밀 위치를 추정했습니다. 이 위치의 실측 이미지는 없습니다."
+      },
+      "statistics": {
+        "mean": 1871.9446370400294,
+        "median": 1836.5744761089368,
+        "std_population": 101.08625691362599,
+        "min": 1810.8979610037509,
+        "max": 2311.6349656515004,
+        "peak_gap_percent": 0.36995661135247904
+      }
+    },
+    "laplacian_variance": {
+      "name": "Laplacian variance",
+      "image": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd2/pollen.spd2.0097.png",
+      "sequence_1_based": 97,
+      "coarse_distance_mm": 10.740000000000075,
+      "coarse_focus": 76704.99032480476,
+      "search": {
+        "index": 96,
+        "visited": [
+          50,
+          25
+        ],
+        "local_index": 25,
+        "corrected": true,
+        "message": "기울기 탐색의 지역 최대값을 전체 스캔의 더 높은 최대값으로 보정했습니다."
+      },
+      "fine": {
+        "distance_mm": 10.741143568799886,
+        "coefficients": [
+          -313.3552253990775,
+          143.3373036098107,
+          76744.49267878185
+        ],
+        "center_mm": 10.740000000000075,
+        "scale_mm": 0.005000000000000782,
+        "fit_indices": [
+          94,
+          95,
+          96,
+          97,
+          98
+        ],
+        "r_squared": 0.9401884152260147,
+        "rmse": 141.79063484073305,
+        "status": "이차곡선의 꼭짓점으로 정밀 위치를 추정했습니다. 이 위치의 실측 이미지는 없습니다."
+      },
+      "statistics": {
+        "mean": 64524.540569152006,
+        "median": 63923.227494206985,
+        "std_population": 2353.5059548355407,
+        "min": 63205.90979689741,
+        "max": 76704.99032480476,
+        "peak_gap_percent": 0.2521120192695713
+      }
+    },
+    "tenengrad": {
+      "name": "Tenengrad · Sobel",
+      "image": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd2/pollen.spd2.0099.png",
+      "sequence_1_based": 99,
+      "coarse_distance_mm": 10.750000000000076,
+      "coarse_focus": 37565.73886617025,
+      "search": {
+        "index": 98,
+        "visited": [
+          50,
+          49
+        ],
+        "local_index": 49,
+        "corrected": true,
+        "message": "기울기 탐색의 지역 최대값을 전체 스캔의 더 높은 최대값으로 보정했습니다."
+      },
+      "fine": {
+        "distance_mm": 10.74835877411362,
+        "coefficients": [
+          -161.12004216512614,
+          -105.77375361124854,
+          37529.764423116045
+        ],
+        "center_mm": 10.750000000000076,
+        "scale_mm": 0.005000000000000782,
+        "fit_indices": [
+          96,
+          97,
+          98,
+          99,
+          100
+        ],
+        "r_squared": 0.9775109483869159,
+        "rmse": 46.766091089065426,
+        "status": "이차곡선의 꼭짓점으로 정밀 위치를 추정했습니다. 이 위치의 실측 이미지는 없습니다."
+      },
+      "statistics": {
+        "mean": 27774.618767027478,
+        "median": 26812.362780253094,
+        "std_population": 2432.2324100521764,
+        "min": 26312.16547648112,
+        "max": 37565.73886617025,
+        "peak_gap_percent": 0.15246064299364143
+      }
+    },
+    "entropy": {
+      "name": "Shannon entropy",
+      "image": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd2/pollen.spd2.0097.png",
+      "sequence_1_based": 97,
+      "coarse_distance_mm": 10.740000000000075,
+      "coarse_focus": 7.561296494581194,
+      "search": {
+        "index": 96,
+        "visited": [
+          50,
+          75
+        ],
+        "local_index": 75,
+        "corrected": true,
+        "message": "기울기 탐색의 지역 최대값을 전체 스캔의 더 높은 최대값으로 보정했습니다."
+      },
+      "fine": {
+        "distance_mm": 10.740065073553392,
+        "coefficients": [
+          -0.0010097348600083826,
+          2.6282814099779915e-05,
+          7.558776467121949
+        ],
+        "center_mm": 10.740000000000075,
+        "scale_mm": 0.005000000000000782,
+        "fit_indices": [
+          94,
+          95,
+          96,
+          97,
+          98
+        ],
+        "r_squared": 0.5233764710120393,
+        "rmse": 0.0016127686417246815,
+        "status": "이차곡선의 꼭짓점으로 정밀 위치를 추정했습니다. 이 위치의 실측 이미지는 없습니다."
+      },
+      "statistics": {
+        "mean": 7.418960771173994,
+        "median": 7.404690249405793,
+        "std_population": 0.05208368328841199,
+        "min": 7.354049454244162,
+        "max": 7.561296494581194,
+        "peak_gap_percent": 0.061774039886097594
+      }
+    },
+    "autocorrelation": {
+      "name": "Autocorrelation",
+      "image": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd2/pollen.spd2.0099.png",
+      "sequence_1_based": 99,
+      "coarse_distance_mm": 10.750000000000076,
+      "coarse_focus": 652.7272746962655,
+      "search": {
+        "index": 98,
+        "visited": [
+          50,
+          47,
+          49
+        ],
+        "local_index": 49,
+        "corrected": true,
+        "message": "기울기 탐색의 지역 최대값을 전체 스캔의 더 높은 최대값으로 보정했습니다."
+      },
+      "fine": {
+        "distance_mm": 10.748340488954792,
+        "coefficients": [
+          -2.6181910906486774,
+          -1.7379668134377324,
+          651.1362305688541
+        ],
+        "center_mm": 10.750000000000076,
+        "scale_mm": 0.005000000000000782,
+        "fit_indices": [
+          96,
+          97,
+          98,
+          99,
+          100
+        ],
+        "r_squared": 0.9573935341853054,
+        "rmse": 1.059724173116639,
+        "status": "이차곡선의 꼭짓점으로 정밀 위치를 추정했습니다. 이 위치의 실측 이미지는 없습니다."
+      },
+      "statistics": {
+        "mean": 514.0524116999811,
+        "median": 502.4236854309361,
+        "std_population": 32.91026683060752,
+        "min": 493.0191057159165,
+        "max": 652.7272746962655,
+        "peak_gap_percent": 0.46045519636578464
+      }
+    },
+    "wavelet1": {
+      "name": "Haar wavelet · L1",
+      "image": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd2/pollen.spd2.0098.png",
+      "sequence_1_based": 98,
+      "coarse_distance_mm": 10.745000000000076,
+      "coarse_focus": 65.05865478515625,
+      "search": {
+        "index": 97,
+        "visited": [
+          50,
+          25
+        ],
+        "local_index": 25,
+        "corrected": true,
+        "message": "기울기 탐색의 지역 최대값을 전체 스캔의 더 높은 최대값으로 보정했습니다."
+      },
+      "fine": {
+        "distance_mm": 10.74359406637952,
+        "coefficients": [
+          -0.110256558372867,
+          -0.062005360921227874,
+          65.07647879464282
+        ],
+        "center_mm": 10.745000000000076,
+        "scale_mm": 0.005000000000000782,
+        "fit_indices": [
+          95,
+          96,
+          97,
+          98,
+          99
+        ],
+        "r_squared": 0.9961050623604195,
+        "rmse": 0.012773477394457184,
+        "status": "이차곡선의 꼭짓점으로 정밀 위치를 추정했습니다. 이 위치의 실측 이미지는 없습니다."
+      },
+      "statistics": {
+        "mean": 59.8519429857008,
+        "median": 59.53357950846354,
+        "std_population": 1.0871822365571517,
+        "min": 59.17332712809245,
+        "max": 65.05865478515625,
+        "peak_gap_percent": 0.04218574046920403
+      }
+    },
+    "wavelet2": {
+      "name": "Haar wavelet · variance",
+      "image": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd2/pollen.spd2.0098.png",
+      "sequence_1_based": 98,
+      "coarse_distance_mm": 10.745000000000076,
+      "coarse_focus": 970.4827260967447,
+      "search": {
+        "index": 97,
+        "visited": [
+          50,
+          25
+        ],
+        "local_index": 25,
+        "corrected": true,
+        "message": "기울기 탐색의 지역 최대값을 전체 스캔의 더 높은 최대값으로 보정했습니다."
+      },
+      "fine": {
+        "distance_mm": 10.74243763518624,
+        "coefficients": [
+          -3.6461742987145653,
+          -3.7371314912537312,
+          969.2812744738649
+        ],
+        "center_mm": 10.745000000000076,
+        "scale_mm": 0.005000000000000782,
+        "fit_indices": [
+          95,
+          96,
+          97,
+          98,
+          99
+        ],
+        "r_squared": 0.8911614294777069,
+        "rmse": 2.8209426335939303,
+        "status": "이차곡선의 꼭짓점으로 정밀 위치를 추정했습니다. 이 위치의 실측 이미지는 없습니다."
+      },
+      "statistics": {
+        "mean": 802.0908349909602,
+        "median": 791.1272500443479,
+        "std_population": 35.43195992298852,
+        "min": 779.4644735246223,
+        "max": 970.4827260967447,
+        "peak_gap_percent": 0.5708081199266919
+      }
+    },
+    "rank_consensus": {
+      "name": "Consensus · mean rank",
+      "image": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd2/pollen.spd2.0099.png",
+      "sequence_1_based": 99,
+      "coarse_distance_mm": 10.750000000000076,
+      "coarse_focus": 0.994949494949495,
+      "search": {
+        "index": 98,
+        "visited": [
+          50,
+          25,
+          23
+        ],
+        "local_index": 23,
+        "corrected": true,
+        "message": "기울기 탐색의 지역 최대값을 전체 스캔의 더 높은 최대값으로 보정했습니다."
+      },
+      "fine": {
+        "distance_mm": 10.746011627907052,
+        "coefficients": [
+          -0.0031024531024533074,
+          -0.004949494949494939,
+          0.9934776334776334
+        ],
+        "center_mm": 10.750000000000076,
+        "scale_mm": 0.005000000000000782,
+        "fit_indices": [
+          96,
+          97,
+          98,
+          99,
+          100
+        ],
+        "r_squared": 0.9866686865626403,
+        "rmse": 0.0010129829018635183,
+        "status": "이차곡선의 꼭짓점으로 정밀 위치를 추정했습니다. 이 위치의 실측 이미지는 없습니다."
+      },
+      "statistics": {
+        "mean": 0.5,
+        "median": 0.4707070707070707,
+        "std_population": 0.25349591124945037,
+        "min": 0.016161616161616165,
+        "max": 0.994949494949495,
+        "peak_gap_percent": 2.2317173489927e-14
+      }
+    }
+  }
+}

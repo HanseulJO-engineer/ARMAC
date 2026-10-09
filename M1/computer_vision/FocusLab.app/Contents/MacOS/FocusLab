@@ -1,0 +1,5 @@
+#!/bin/zsh
+set -e
+FOCUSLAB_PROJECT="${0:A:h:h:h:h}"
+cd "$FOCUSLAB_PROJECT"
+exec "$FOCUSLAB_PROJECT/.venv/bin/python" "$FOCUSLAB_PROJECT/run_app.py" "$@"

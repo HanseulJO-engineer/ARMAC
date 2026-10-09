@@ -1,0 +1,960 @@
+{
+  "dataset": "pollen.spd5",
+  "source": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd5",
+  "position_source": "pollen.spd5.WDs.yml · WD[0:] · mm",
+  "settings": {
+    "methods": [
+      "normalized_variance",
+      "squared_gradient",
+      "brenner",
+      "brenner_squared",
+      "laplacian_variance",
+      "tenengrad",
+      "entropy",
+      "autocorrelation",
+      "wavelet1",
+      "wavelet2",
+      "modified_laplacian",
+      "gaussian_derivative",
+      "tenengrad_variance"
+    ],
+    "search": "gradient_verified",
+    "start_fraction": 0.25,
+    "fit_window": 5,
+    "gaussian_sigma": 0,
+    "roi": [
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  "images_found": 199,
+  "images_analyzed": 199,
+  "image_shape": [
+    768,
+    1024
+  ],
+  "elapsed_seconds": 5.889910458121449,
+  "warnings": [
+    "200 WD values / 199 images. First naturally sorted image ↔ WD[0]. The offset is selectable because the source alignment is ambiguous.",
+    "Actual WD: minimum 10.26000 mm, median step 5.000 µm. Metadata takes precedence over the lab text (10 mm / 10 µm)."
+  ],
+  "methods": {
+    "normalized_variance": {
+      "name": "Normalized variance",
+      "image": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd5/pollen.spd5.0098.png",
+      "sequence_1_based": 98,
+      "coarse_distance_mm": 10.745000000000076,
+      "coarse_focus": 16.858515916131967,
+      "top_three": [
+        {
+          "rank": 1,
+          "filename": "pollen.spd5.0098.png",
+          "sequence_1_based": 98,
+          "distance_mm": 10.745000000000076,
+          "score": 16.858515916131967
+        },
+        {
+          "rank": 2,
+          "filename": "pollen.spd5.0097.png",
+          "sequence_1_based": 97,
+          "distance_mm": 10.740000000000075,
+          "score": 16.77809277135455
+        },
+        {
+          "rank": 3,
+          "filename": "pollen.spd5.0099.png",
+          "sequence_1_based": 99,
+          "distance_mm": 10.750000000000076,
+          "score": 16.723598706258393
+        }
+      ],
+      "search": {
+        "index": 97,
+        "visited": [
+          50,
+          75,
+          100,
+          97
+        ],
+        "local_index": 97,
+        "corrected": false,
+        "message": "Centered-difference gradient ascent was verified against the full stack."
+      },
+      "fine": {
+        "distance_mm": 10.744542643071384,
+        "coefficients": [
+          -0.07516770470243439,
+          -0.013751388223791353,
+          16.839014432558127
+        ],
+        "center_mm": 10.745000000000076,
+        "scale_mm": 0.005000000000000782,
+        "fit_indices": [
+          95,
+          96,
+          97,
+          98,
+          99
+        ],
+        "r_squared": 0.985462442836416,
+        "rmse": 0.015458451073431021,
+        "status": "Fine position estimated from the quadratic vertex. No image was acquired at this interpolated position."
+      },
+      "statistics": {
+        "mean": 10.859216802645472,
+        "median": 10.214324557565451,
+        "std_population": 1.8504423392978424,
+        "min": 8.980293028250816,
+        "max": 16.858515916131967,
+        "peak_gap_percent": 0.47704759527770324,
+        "median_scoring_ms": 0.7390421815216541
+      }
+    },
+    "squared_gradient": {
+      "name": "Squared gradient",
+      "image": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd5/pollen.spd5.0098.png",
+      "sequence_1_based": 98,
+      "coarse_distance_mm": 10.745000000000076,
+      "coarse_focus": 569.1109851030466,
+      "top_three": [
+        {
+          "rank": 1,
+          "filename": "pollen.spd5.0098.png",
+          "sequence_1_based": 98,
+          "distance_mm": 10.745000000000076,
+          "score": 569.1109851030466
+        },
+        {
+          "rank": 2,
+          "filename": "pollen.spd5.0099.png",
+          "sequence_1_based": 99,
+          "distance_mm": 10.750000000000076,
+          "score": 562.0274786677256
+        },
+        {
+          "rank": 3,
+          "filename": "pollen.spd5.0097.png",
+          "sequence_1_based": 97,
+          "distance_mm": 10.740000000000075,
+          "score": 554.8110986375856
+        }
+      ],
+      "search": {
+        "index": 97,
+        "visited": [
+          50,
+          49
+        ],
+        "local_index": 49,
+        "corrected": true,
+        "message": "A local gradient maximum was corrected using the larger full-stack maximum."
+      },
+      "fine": {
+        "distance_mm": 10.746192734882447,
+        "coefficients": [
+          -9.757012812456429,
+          4.655011811665037,
+          568.5501749202857
+        ],
+        "center_mm": 10.745000000000076,
+        "scale_mm": 0.005000000000000782,
+        "fit_indices": [
+          95,
+          96,
+          97,
+          98,
+          99
+        ],
+        "r_squared": 0.9978419225694259,
+        "rmse": 0.8186737001616811,
+        "status": "Fine position estimated from the quadratic vertex. No image was acquired at this interpolated position."
+      },
+      "statistics": {
+        "mean": 188.98710799537764,
+        "median": 161.68415124022482,
+        "std_population": 79.42322662345725,
+        "min": 159.53988218882373,
+        "max": 569.1109851030466,
+        "peak_gap_percent": 1.2446616952997946,
+        "median_scoring_ms": 0.7185833528637886
+      }
+    },
+    "brenner": {
+      "name": "Brenner · course",
+      "image": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd5/pollen.spd5.0098.png",
+      "sequence_1_based": 98,
+      "coarse_distance_mm": 10.745000000000076,
+      "coarse_focus": 26.329229604941293,
+      "top_three": [
+        {
+          "rank": 1,
+          "filename": "pollen.spd5.0098.png",
+          "sequence_1_based": 98,
+          "distance_mm": 10.745000000000076,
+          "score": 26.329229604941293
+        },
+        {
+          "rank": 2,
+          "filename": "pollen.spd5.0097.png",
+          "sequence_1_based": 97,
+          "distance_mm": 10.740000000000075,
+          "score": 26.10975594218852
+        },
+        {
+          "rank": 3,
+          "filename": "pollen.spd5.0099.png",
+          "sequence_1_based": 99,
+          "distance_mm": 10.750000000000076,
+          "score": 26.094172985975213
+        }
+      ],
+      "search": {
+        "index": 97,
+        "visited": [
+          50,
+          49
+        ],
+        "local_index": 49,
+        "corrected": true,
+        "message": "A local gradient maximum was corrected using the larger full-stack maximum."
+      },
+      "fine": {
+        "distance_mm": 10.745480614816255,
+        "coefficients": [
+          -0.20408427176521732,
+          0.039234369903783047,
+          26.31532108348477
+        ],
+        "center_mm": 10.745000000000076,
+        "scale_mm": 0.005000000000000782,
+        "fit_indices": [
+          95,
+          96,
+          97,
+          98,
+          99
+        ],
+        "r_squared": 0.9902304959477878,
+        "rmse": 0.03436487403476395,
+        "status": "Fine position estimated from the quadratic vertex. No image was acquired at this interpolated position."
+      },
+      "statistics": {
+        "mean": 14.449411830024221,
+        "median": 13.35538848458904,
+        "std_population": 2.7855607355767615,
+        "min": 13.201401204745597,
+        "max": 26.329229604941293,
+        "peak_gap_percent": 0.8335741912918831,
+        "median_scoring_ms": 0.7183332927525043
+      }
+    },
+    "brenner_squared": {
+      "name": "Brenner · squared",
+      "image": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd5/pollen.spd5.0098.png",
+      "sequence_1_based": 98,
+      "coarse_distance_mm": 10.745000000000076,
+      "coarse_focus": 1302.570724019488,
+      "top_three": [
+        {
+          "rank": 1,
+          "filename": "pollen.spd5.0098.png",
+          "sequence_1_based": 98,
+          "distance_mm": 10.745000000000076,
+          "score": 1302.570724019488
+        },
+        {
+          "rank": 2,
+          "filename": "pollen.spd5.0097.png",
+          "sequence_1_based": 97,
+          "distance_mm": 10.740000000000075,
+          "score": 1281.9178782921558
+        },
+        {
+          "rank": 3,
+          "filename": "pollen.spd5.0099.png",
+          "sequence_1_based": 99,
+          "distance_mm": 10.750000000000076,
+          "score": 1279.9016200872472
+        }
+      ],
+      "search": {
+        "index": 97,
+        "visited": [
+          50,
+          49
+        ],
+        "local_index": 49,
+        "corrected": true,
+        "message": "A local gradient maximum was corrected using the larger full-stack maximum."
+      },
+      "fine": {
+        "distance_mm": 10.745268566964866,
+        "coefficients": [
+          -19.49543442698162,
+          2.0943318605267867,
+          1301.2713997778046
+        ],
+        "center_mm": 10.745000000000076,
+        "scale_mm": 0.005000000000000782,
+        "fit_indices": [
+          95,
+          96,
+          97,
+          98,
+          99
+        ],
+        "r_squared": 0.9949286420017123,
+        "rmse": 2.3386259099043216,
+        "status": "Fine position estimated from the quadratic vertex. No image was acquired at this interpolated position."
+      },
+      "statistics": {
+        "mean": 375.3648046346171,
+        "median": 300.7616168256686,
+        "std_population": 204.0538235603405,
+        "min": 293.4607463918787,
+        "max": 1302.570724019488,
+        "peak_gap_percent": 1.585545056901117,
+        "median_scoring_ms": 0.7258746773004532
+      }
+    },
+    "laplacian_variance": {
+      "name": "Laplacian variance",
+      "image": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd5/pollen.spd5.0097.png",
+      "sequence_1_based": 97,
+      "coarse_distance_mm": 10.740000000000075,
+      "coarse_focus": 36834.58830275138,
+      "top_three": [
+        {
+          "rank": 1,
+          "filename": "pollen.spd5.0097.png",
+          "sequence_1_based": 97,
+          "distance_mm": 10.740000000000075,
+          "score": 36834.58830275138
+        },
+        {
+          "rank": 2,
+          "filename": "pollen.spd5.0098.png",
+          "sequence_1_based": 98,
+          "distance_mm": 10.745000000000076,
+          "score": 36075.317368648844
+        },
+        {
+          "rank": 3,
+          "filename": "pollen.spd5.0096.png",
+          "sequence_1_based": 96,
+          "distance_mm": 10.735000000000074,
+          "score": 35726.916147542484
+        }
+      ],
+      "search": {
+        "index": 96,
+        "visited": [
+          50,
+          44
+        ],
+        "local_index": 44,
+        "corrected": true,
+        "message": "A local gradient maximum was corrected using the larger full-stack maximum."
+      },
+      "fine": {
+        "distance_mm": 10.740772729775085,
+        "coefficients": [
+          -873.3220256027155,
+          269.9367729417087,
+          36798.49859131957
+        ],
+        "center_mm": 10.740000000000075,
+        "scale_mm": 0.005000000000000782,
+        "fit_indices": [
+          94,
+          95,
+          96,
+          97,
+          98
+        ],
+        "r_squared": 0.9977740912755984,
+        "rmse": 71.33877938656066,
+        "status": "Fine position estimated from the quadratic vertex. No image was acquired at this interpolated position."
+      },
+      "statistics": {
+        "mean": 11639.26055784624,
+        "median": 10232.307267776974,
+        "std_population": 4770.771425697858,
+        "min": 10125.707458978204,
+        "max": 36834.58830275138,
+        "peak_gap_percent": 2.0612988201793443,
+        "median_scoring_ms": 1.4030407182872295
+      }
+    },
+    "tenengrad": {
+      "name": "Tenengrad · Sobel",
+      "image": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd5/pollen.spd5.0098.png",
+      "sequence_1_based": 98,
+      "coarse_distance_mm": 10.745000000000076,
+      "coarse_focus": 23342.753092447918,
+      "top_three": [
+        {
+          "rank": 1,
+          "filename": "pollen.spd5.0098.png",
+          "sequence_1_based": 98,
+          "distance_mm": 10.745000000000076,
+          "score": 23342.753092447918
+        },
+        {
+          "rank": 2,
+          "filename": "pollen.spd5.0099.png",
+          "sequence_1_based": 99,
+          "distance_mm": 10.750000000000076,
+          "score": 23160.80256144206
+        },
+        {
+          "rank": 3,
+          "filename": "pollen.spd5.0097.png",
+          "sequence_1_based": 97,
+          "distance_mm": 10.740000000000075,
+          "score": 22973.545051574707
+        }
+      ],
+      "search": {
+        "index": 97,
+        "visited": [
+          50,
+          75,
+          100,
+          97
+        ],
+        "local_index": 97,
+        "corrected": false,
+        "message": "Centered-difference gradient ascent was verified against the full stack."
+      },
+      "fine": {
+        "distance_mm": 10.746030894418853,
+        "coefficients": [
+          -275.34124083746644,
+          113.53909937540621,
+          23342.610265386676
+        ],
+        "center_mm": 10.745000000000076,
+        "scale_mm": 0.005000000000000782,
+        "fit_indices": [
+          95,
+          96,
+          97,
+          98,
+          99
+        ],
+        "r_squared": 0.9991680436874878,
+        "rmse": 14.079021310448997,
+        "status": "Fine position estimated from the quadratic vertex. No image was acquired at this interpolated position."
+      },
+      "statistics": {
+        "mean": 5945.148802893047,
+        "median": 4334.846682230632,
+        "std_population": 4125.075935297157,
+        "min": 4130.955739339192,
+        "max": 23342.753092447918,
+        "peak_gap_percent": 0.7794733135601123,
+        "median_scoring_ms": 2.210875041782856
+      }
+    },
+    "entropy": {
+      "name": "Shannon entropy",
+      "image": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd5/pollen.spd5.0098.png",
+      "sequence_1_based": 98,
+      "coarse_distance_mm": 10.745000000000076,
+      "coarse_focus": 7.394041671881041,
+      "top_three": [
+        {
+          "rank": 1,
+          "filename": "pollen.spd5.0098.png",
+          "sequence_1_based": 98,
+          "distance_mm": 10.745000000000076,
+          "score": 7.394041671881041
+        },
+        {
+          "rank": 2,
+          "filename": "pollen.spd5.0097.png",
+          "sequence_1_based": 97,
+          "distance_mm": 10.740000000000075,
+          "score": 7.392049645968378
+        },
+        {
+          "rank": 3,
+          "filename": "pollen.spd5.0099.png",
+          "sequence_1_based": 99,
+          "distance_mm": 10.750000000000076,
+          "score": 7.386284309231962
+        }
+      ],
+      "search": {
+        "index": 97,
+        "visited": [
+          50,
+          75,
+          100,
+          94,
+          97
+        ],
+        "local_index": 97,
+        "corrected": false,
+        "message": "Centered-difference gradient ascent was verified against the full stack."
+      },
+      "fine": {
+        "distance_mm": 10.743203232917796,
+        "coefficients": [
+          -0.0033493054281587948,
+          -0.0024071686967247793,
+          7.393126438569412
+        ],
+        "center_mm": 10.745000000000076,
+        "scale_mm": 0.005000000000000782,
+        "fit_indices": [
+          95,
+          96,
+          97,
+          98,
+          99
+        ],
+        "r_squared": 0.9898980940391648,
+        "rmse": 0.0006624224709868778,
+        "status": "Fine position estimated from the quadratic vertex. No image was acquired at this interpolated position."
+      },
+      "statistics": {
+        "mean": 7.043533939537619,
+        "median": 7.00924437618685,
+        "std_population": 0.11214372293513684,
+        "min": 6.919078662197705,
+        "max": 7.394041671881041,
+        "peak_gap_percent": 0.026940961399205987,
+        "median_scoring_ms": 2.2510411217808723
+      }
+    },
+    "autocorrelation": {
+      "name": "Autocorrelation",
+      "image": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd5/pollen.spd5.0098.png",
+      "sequence_1_based": 98,
+      "coarse_distance_mm": 10.745000000000076,
+      "coarse_focus": 383.4548207660633,
+      "top_three": [
+        {
+          "rank": 1,
+          "filename": "pollen.spd5.0098.png",
+          "sequence_1_based": 98,
+          "distance_mm": 10.745000000000076,
+          "score": 383.4548207660633
+        },
+        {
+          "rank": 2,
+          "filename": "pollen.spd5.0097.png",
+          "sequence_1_based": 97,
+          "distance_mm": 10.740000000000075,
+          "score": 380.2339825913242
+        },
+        {
+          "rank": 3,
+          "filename": "pollen.spd5.0099.png",
+          "sequence_1_based": 99,
+          "distance_mm": 10.750000000000076,
+          "score": 375.6706875815395
+        }
+      ],
+      "search": {
+        "index": 97,
+        "visited": [
+          50,
+          75,
+          100,
+          97
+        ],
+        "local_index": 97,
+        "corrected": false,
+        "message": "Centered-difference gradient ascent was verified against the full stack."
+      },
+      "fine": {
+        "distance_mm": 10.744344459819192,
+        "coefficients": [
+          -4.832991886823277,
+          -1.2672881502772424,
+          383.05312449037837
+        ],
+        "center_mm": 10.745000000000076,
+        "scale_mm": 0.005000000000000782,
+        "fit_indices": [
+          95,
+          96,
+          97,
+          98,
+          99
+        ],
+        "r_squared": 0.9916576938229614,
+        "rmse": 0.7597456953170849,
+        "status": "Fine position estimated from the quadratic vertex. No image was acquired at this interpolated position."
+      },
+      "statistics": {
+        "mean": 110.08561814776549,
+        "median": 86.458984375,
+        "std_population": 62.44733200805919,
+        "min": 83.80474228432811,
+        "max": 383.4548207660633,
+        "peak_gap_percent": 0.8399524534088539,
+        "median_scoring_ms": 0.9239581413567066
+      }
+    },
+    "wavelet1": {
+      "name": "Haar wavelet · L1",
+      "image": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd5/pollen.spd5.0098.png",
+      "sequence_1_based": 98,
+      "coarse_distance_mm": 10.745000000000076,
+      "coarse_focus": 43.67005157470703,
+      "top_three": [
+        {
+          "rank": 1,
+          "filename": "pollen.spd5.0098.png",
+          "sequence_1_based": 98,
+          "distance_mm": 10.745000000000076,
+          "score": 43.67005157470703
+        },
+        {
+          "rank": 2,
+          "filename": "pollen.spd5.0097.png",
+          "sequence_1_based": 97,
+          "distance_mm": 10.740000000000075,
+          "score": 43.54130045572917
+        },
+        {
+          "rank": 3,
+          "filename": "pollen.spd5.0099.png",
+          "sequence_1_based": 99,
+          "distance_mm": 10.750000000000076,
+          "score": 42.801900227864586
+        }
+      ],
+      "search": {
+        "index": 97,
+        "visited": [
+          50,
+          75,
+          100,
+          94,
+          97
+        ],
+        "local_index": 97,
+        "corrected": false,
+        "message": "Centered-difference gradient ascent was verified against the full stack."
+      },
+      "fine": {
+        "distance_mm": 10.743329466153348,
+        "coefficients": [
+          -0.4234597342354967,
+          -0.28296152750651404,
+          43.625056675502236
+        ],
+        "center_mm": 10.745000000000076,
+        "scale_mm": 0.005000000000000782,
+        "fit_indices": [
+          95,
+          96,
+          97,
+          98,
+          99
+        ],
+        "r_squared": 0.9931774332663573,
+        "rmse": 0.06744711016683848,
+        "status": "Fine position estimated from the quadratic vertex. No image was acquired at this interpolated position."
+      },
+      "statistics": {
+        "mean": 25.501606236750156,
+        "median": 24.149859110514324,
+        "std_population": 3.844557056566273,
+        "min": 23.951512654622395,
+        "max": 43.67005157470703,
+        "peak_gap_percent": 0.2948270366880683,
+        "median_scoring_ms": 1.7441660165786743
+      }
+    },
+    "wavelet2": {
+      "name": "Haar wavelet · variance",
+      "image": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd5/pollen.spd5.0097.png",
+      "sequence_1_based": 97,
+      "coarse_distance_mm": 10.740000000000075,
+      "coarse_focus": 578.4803268164396,
+      "top_three": [
+        {
+          "rank": 1,
+          "filename": "pollen.spd5.0097.png",
+          "sequence_1_based": 97,
+          "distance_mm": 10.740000000000075,
+          "score": 578.4803268164396
+        },
+        {
+          "rank": 2,
+          "filename": "pollen.spd5.0098.png",
+          "sequence_1_based": 98,
+          "distance_mm": 10.745000000000076,
+          "score": 570.7753285686291
+        },
+        {
+          "rank": 3,
+          "filename": "pollen.spd5.0096.png",
+          "sequence_1_based": 96,
+          "distance_mm": 10.735000000000074,
+          "score": 563.7426641007381
+        }
+      ],
+      "search": {
+        "index": 96,
+        "visited": [
+          50
+        ],
+        "local_index": 50,
+        "corrected": true,
+        "message": "A local gradient maximum was corrected using the larger full-stack maximum."
+      },
+      "fine": {
+        "distance_mm": 10.741118952817638,
+        "coefficients": [
+          -12.743555440978628,
+          5.7037749065810495,
+          579.393661791973
+        ],
+        "center_mm": 10.740000000000075,
+        "scale_mm": 0.005000000000000782,
+        "fit_indices": [
+          94,
+          95,
+          96,
+          97,
+          98
+        ],
+        "r_squared": 0.9948002542867225,
+        "rmse": 1.6482889184669078,
+        "status": "Fine position estimated from the quadratic vertex. No image was acquired at this interpolated position."
+      },
+      "statistics": {
+        "mean": 166.3796461724371,
+        "median": 139.40587610412493,
+        "std_population": 82.62506426760348,
+        "min": 136.45006540567718,
+        "max": 578.4803268164396,
+        "peak_gap_percent": 1.3319378189079596,
+        "median_scoring_ms": 2.0482908003032207
+      }
+    },
+    "modified_laplacian": {
+      "name": "Modified Laplacian · SML",
+      "image": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd5/pollen.spd5.0097.png",
+      "sequence_1_based": 97,
+      "coarse_distance_mm": 10.740000000000075,
+      "coarse_focus": 60.06977208455404,
+      "top_three": [
+        {
+          "rank": 1,
+          "filename": "pollen.spd5.0097.png",
+          "sequence_1_based": 97,
+          "distance_mm": 10.740000000000075,
+          "score": 60.06977208455404
+        },
+        {
+          "rank": 2,
+          "filename": "pollen.spd5.0098.png",
+          "sequence_1_based": 98,
+          "distance_mm": 10.745000000000076,
+          "score": 60.01446787516276
+        },
+        {
+          "rank": 3,
+          "filename": "pollen.spd5.0096.png",
+          "sequence_1_based": 96,
+          "distance_mm": 10.735000000000074,
+          "score": 58.498095194498696
+        }
+      ],
+      "search": {
+        "index": 96,
+        "visited": [
+          50,
+          25,
+          0
+        ],
+        "local_index": 0,
+        "corrected": true,
+        "message": "A local gradient maximum was corrected using the larger full-stack maximum."
+      },
+      "fine": {
+        "distance_mm": 10.742340595325627,
+        "coefficients": [
+          -0.7267181759788907,
+          0.6803812662760373,
+          60.017708660307356
+        ],
+        "center_mm": 10.740000000000075,
+        "scale_mm": 0.005000000000000782,
+        "fit_indices": [
+          94,
+          95,
+          96,
+          97,
+          98
+        ],
+        "r_squared": 0.9983057176838176,
+        "rmse": 0.06388221233460001,
+        "status": "Fine position estimated from the quadratic vertex. No image was acquired at this interpolated position."
+      },
+      "statistics": {
+        "mean": 36.99295057363845,
+        "median": 35.66478729248047,
+        "std_population": 4.497576812874219,
+        "min": 35.529805501302086,
+        "max": 60.06977208455404,
+        "peak_gap_percent": 0.09206662098440249,
+        "median_scoring_ms": 2.0239995792508125
+      }
+    },
+    "gaussian_derivative": {
+      "name": "Gaussian derivative energy",
+      "image": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd5/pollen.spd5.0099.png",
+      "sequence_1_based": 99,
+      "coarse_distance_mm": 10.750000000000076,
+      "coarse_focus": 134.3803077392496,
+      "top_three": [
+        {
+          "rank": 1,
+          "filename": "pollen.spd5.0099.png",
+          "sequence_1_based": 99,
+          "distance_mm": 10.750000000000076,
+          "score": 134.3803077392496
+        },
+        {
+          "rank": 2,
+          "filename": "pollen.spd5.0100.png",
+          "sequence_1_based": 100,
+          "distance_mm": 10.755000000000077,
+          "score": 133.5427529774821
+        },
+        {
+          "rank": 3,
+          "filename": "pollen.spd5.0098.png",
+          "sequence_1_based": 98,
+          "distance_mm": 10.745000000000076,
+          "score": 133.16355612339555
+        }
+      ],
+      "search": {
+        "index": 98,
+        "visited": [
+          50,
+          75,
+          100,
+          97,
+          99,
+          98
+        ],
+        "local_index": 98,
+        "corrected": false,
+        "message": "Centered-difference gradient ascent was verified against the full stack."
+      },
+      "fine": {
+        "distance_mm": 10.75026274237436,
+        "coefficients": [
+          -1.0443443427267372,
+          0.10975740487088669,
+          134.39062243159913
+        ],
+        "center_mm": 10.750000000000076,
+        "scale_mm": 0.005000000000000782,
+        "fit_indices": [
+          96,
+          97,
+          98,
+          99,
+          100
+        ],
+        "r_squared": 0.9989521241183524,
+        "rmse": 0.056821381706018755,
+        "status": "Fine position estimated from the quadratic vertex. No image was acquired at this interpolated position."
+      },
+      "statistics": {
+        "mean": 32.49191480669384,
+        "median": 20.015493184883752,
+        "std_population": 28.172971106685086,
+        "min": 17.225230603531898,
+        "max": 134.3803077392496,
+        "peak_gap_percent": 0.6232719479945399,
+        "median_scoring_ms": 3.582749981433153
+      }
+    },
+    "tenengrad_variance": {
+      "name": "Tenengrad variance",
+      "image": "/Users/kobe/workspace/ARMAC/M1/computer_vision/Documents for autofocusing app/pollen.spd5/pollen.spd5.0098.png",
+      "sequence_1_based": 98,
+      "coarse_distance_mm": 10.745000000000076,
+      "coarse_focus": 8386.599905485253,
+      "top_three": [
+        {
+          "rank": 1,
+          "filename": "pollen.spd5.0098.png",
+          "sequence_1_based": 98,
+          "distance_mm": 10.745000000000076,
+          "score": 8386.599905485253
+        },
+        {
+          "rank": 2,
+          "filename": "pollen.spd5.0099.png",
+          "sequence_1_based": 99,
+          "distance_mm": 10.750000000000076,
+          "score": 8367.423716437805
+        },
+        {
+          "rank": 3,
+          "filename": "pollen.spd5.0097.png",
+          "sequence_1_based": 97,
+          "distance_mm": 10.740000000000075,
+          "score": 8265.776607077472
+        }
+      ],
+      "search": {
+        "index": 97,
+        "visited": [
+          50,
+          75,
+          100,
+          97
+        ],
+        "local_index": 97,
+        "corrected": false,
+        "message": "Centered-difference gradient ascent was verified against the full stack."
+      },
+      "fine": {
+        "distance_mm": 10.746170438155557,
+        "coefficients": [
+          -90.70315956977306,
+          42.46497551328319,
+          8399.021954990547
+        ],
+        "center_mm": 10.745000000000076,
+        "scale_mm": 0.005000000000000782,
+        "fit_indices": [
+          95,
+          96,
+          97,
+          98,
+          99
+        ],
+        "r_squared": 0.996449101374044,
+        "rmse": 9.743783797847064,
+        "status": "Fine position estimated from the quadratic vertex. No image was acquired at this interpolated position."
+      },
+      "statistics": {
+        "mean": 1827.8486890002523,
+        "median": 1193.6952493728206,
+        "std_population": 1611.6644318160534,
+        "min": 1121.7530635056798,
+        "max": 8386.599905485253,
+        "peak_gap_percent": 0.22865272295755937,
+        "median_scoring_ms": 2.8638746589422226
+      }
+    }
+  }
+}
